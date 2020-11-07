@@ -1,0 +1,9 @@
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/CrossCutting.deps.json
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/CrossCutting.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/bin/Debug/netcoreapp3.1/CrossCutting.pdb
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csprojAssemblyReference.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.AssemblyInfoInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.AssemblyInfo.cs
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.csproj.CoreCompileInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/obj/Debug/netcoreapp3.1/CrossCutting.pdb

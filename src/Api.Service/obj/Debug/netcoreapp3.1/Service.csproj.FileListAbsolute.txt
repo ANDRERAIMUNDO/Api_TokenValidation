@@ -1,0 +1,8 @@
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/bin/Debug/netcoreapp3.1/Service.deps.json
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/bin/Debug/netcoreapp3.1/Service.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/bin/Debug/netcoreapp3.1/Service.pdb
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfoInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/Debug/netcoreapp3.1/Service.AssemblyInfo.cs
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/Debug/netcoreapp3.1/Service.csproj.CoreCompileInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/Debug/netcoreapp3.1/Service.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/Debug/netcoreapp3.1/Service.pdb

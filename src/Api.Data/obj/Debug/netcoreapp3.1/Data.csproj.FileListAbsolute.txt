@@ -1,0 +1,9 @@
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/bin/Debug/netcoreapp3.1/Data.deps.json
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/bin/Debug/netcoreapp3.1/Data.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/bin/Debug/netcoreapp3.1/Data.pdb
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.csprojAssemblyReference.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.AssemblyInfoInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.AssemblyInfo.cs
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.csproj.CoreCompileInputs.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data/obj/Debug/netcoreapp3.1/Data.pdb
