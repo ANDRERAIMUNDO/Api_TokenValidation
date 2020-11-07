@@ -5,7 +5,7 @@ using Api.Domain.Dto;
 
 namespace Api.Domain.Interfaces.User
 {   
-    public interface IName
+    public interface ILoginService
     {
      Task<object> FindByLogin (LoginDto user);
     }
