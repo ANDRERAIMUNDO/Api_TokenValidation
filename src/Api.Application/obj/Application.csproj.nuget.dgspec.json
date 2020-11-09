@@ -33,6 +33,9 @@
               },
               "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj": {
                 "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj"
+              },
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj"
               }
             }
           }
@@ -46,9 +49,23 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
@@ -93,7 +110,17 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj"
+              },
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj"
+              },
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -104,6 +131,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -230,6 +267,73 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj",
+        "projectName": "Service",
+        "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj",
+        "packagesPath": "/home/andre/.nuget/packages/",
+        "outputPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andre/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj"
+              },
+              "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj": {
+                "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

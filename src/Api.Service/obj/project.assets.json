@@ -304,16 +304,6 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "CrossCutting/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/CrossCutting.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CrossCutting.dll": {}
-        }
-      },
       "Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -989,11 +979,6 @@
         "version.txt"
       ]
     },
-    "CrossCutting/1.0.0": {
-      "type": "project",
-      "path": "../Api.CrossCutting/CrossCutting.csproj",
-      "msbuildProject": "../Api.CrossCutting/CrossCutting.csproj"
-    },
     "Data/1.0.0": {
       "type": "project",
       "path": "../Api.Data/Data.csproj",
@@ -1008,7 +993,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper >= 10.0.0",
-      "CrossCutting >= 1.0.0",
       "Data >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.4"
@@ -1038,9 +1022,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/CrossCutting.csproj": {
-              "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/CrossCutting.csproj"
-            },
             "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj": {
               "projectPath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Data/Data.csproj"
             },

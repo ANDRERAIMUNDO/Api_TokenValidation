@@ -9,7 +9,6 @@
       "Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.0.0",
-          "CrossCutting": "1.0.0",
           "Data": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.4"
@@ -272,11 +271,6 @@
         }
       },
       "System.Reflection.Emit/4.7.0": {},
-      "CrossCutting/1.0.0": {
-        "runtime": {
-          "CrossCutting.dll": {}
-        }
-      },
       "Data/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
@@ -488,11 +482,6 @@
       "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
       "path": "system.reflection.emit/4.7.0",
       "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
-    },
-    "CrossCutting/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Data/1.0.0": {
       "type": "project",

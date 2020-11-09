@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "zyNhu8RTFc18ogrfhnctU/B6DzMWv3u7gmbVGc5WUW/Kaq/W4ikEi7Ai/UfLbKpMPYIy7igKeWRwpsOOOsIn+g==",
+  "dgSpecHash": "FazCKjn6bAXvHol73rsNCUqYlsO1duvtY7P6lrGYsjJ1e2VydcdyaE0m8vYr/S+U3WBnx/DZ2QFnu9gNvH4RBQ==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Domain/Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/andre/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/home/andre/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.7.1/microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "/home/andre/.nuget/packages/microsoft.identitymodel.logging/6.7.1/microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "/home/andre/.nuget/packages/microsoft.identitymodel.tokens/6.7.1/microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "/home/andre/.nuget/packages/system.identitymodel.tokens.jwt/6.7.1/system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "/home/andre/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
