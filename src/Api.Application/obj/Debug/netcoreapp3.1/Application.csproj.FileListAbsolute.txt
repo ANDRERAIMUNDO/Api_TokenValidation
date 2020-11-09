@@ -41,15 +41,12 @@
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
-/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Data.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Domain.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Domain.pdb
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Data.pdb
-/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.pdb
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/obj/Debug/netcoreapp3.1/Application.csproj.CopyComplete
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/AutoMapper.dll
-/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Service.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Service.pdb
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -65,3 +62,6 @@
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application/obj/Debug/netcoreapp3.1/Application.MvcApplicationPartsAssemblyInfo.cs
+/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Application/bin/Debug/netcoreapp3.1/CrossCutting.pdb
