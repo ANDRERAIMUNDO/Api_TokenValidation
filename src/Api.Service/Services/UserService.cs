@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Api.Service.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private IRepository<UserEntity> _repository;
         private IMapper _mapper;
