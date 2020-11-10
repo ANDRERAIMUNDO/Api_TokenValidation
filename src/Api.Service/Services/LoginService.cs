@@ -7,28 +7,33 @@ using Api.Domain.Interfaces.User;
 using Api.Domain.Entities;
 using Api.Domain.Repository;
 using Api.Domain.Security;
-using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Extensions.Configuration;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens;  
 using System.Collections.Generic;
 
 namespace Api.Service.Services
 {
     public class LoginService : ILoginService
     {
-        private IUserRepository _repository;
+        
+        public SigningConfigurations _signingConfigurations;
         private TokenConfigurations _tokenConfigurations;
+        private IUserRepository _repository;
         private IConfiguration _configuration{get;}
 
-        public LoginService(IUserRepository repository, TokenConfigurations tokenConfigurations, IConfiguration configuration)
+        public LoginService(SigningConfigurations signingConfigurations, TokenConfigurations tokenConfigurations, IUserRepository repository, IConfiguration configuration)
         {
-            _repository = repository;
+            _signingConfigurations =signingConfigurations;
             _tokenConfigurations = tokenConfigurations;
+            _repository = repository;
             _configuration = configuration;
         }
 
         public async Task<object> FindByLogin(LoginDto user)
         {
-            var baseUser = new UserEntity();
+                var baseUser = new UserEntity();
             if(user != null && !string.IsNullOrWhiteSpace(user.Email))
             {
                 baseUser = await _repository.FindByLogin(user.Email);
@@ -43,19 +48,20 @@ namespace Api.Service.Services
              else
                 {
                   ClaimsIdentity identity = new ClaimsIdentity(
-                        new GenericIdentity(user.Email),
+                        new GenericIdentity(baseUser.Email),
                         new []
                      {
                             new Claim (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                            new Claim(JwtRegisteredClaimNames.UniqueName, user.Email),
+                            new Claim (JwtRegisteredClaimNames.UniqueName, user.Email),
                         }
                  );
                      DateTime createDate = DateTime.UtcNow;
-                     DateTime expirationDate = createDate + TimeSpan.FromSeconds(_tokenConfigurations.Secunds);
+                    DateTime expirationDate = createDate + TimeSpan.FromSeconds(_tokenConfigurations.Seconds);
+                    //DateTime expirationDate = createDate + TimeSpan.FromSeconds(Convert.ToInt32(Environment.GetEnvironmentVariable("Seconds")));
 
                    var handler = new JwtSecurityTokenHandler();
                    string token  = CreateToken(identity, createDate, expirationDate, handler);
-                   return SuccessObject(createDate, expirationDate, token, user);
+                   return SuccessObject(createDate, expirationDate, token, baseUser);
                 }
  
             }
@@ -71,10 +77,11 @@ namespace Api.Service.Services
 
     private string CreateToken (ClaimsIdentity identity, DateTime createDate, DateTime expirationDate, JwtSecurityTokenHandler handler)
     {
-        var securityToken = handler.CreateToken(new Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor
+        var securityToken = handler.CreateToken(new SecurityTokenDescriptor
         {
             Issuer = _tokenConfigurations.Issuer,
             Audience = _tokenConfigurations.Audience,
+            SigningCredentials = _signingConfigurations.SigningCredentials,
             Subject = identity,
             NotBefore = createDate,
             Expires = expirationDate,
@@ -84,16 +91,16 @@ namespace Api.Service.Services
         var token = handler.WriteToken(securityToken);
         return token;
     }
-    private object SuccessObject(DateTime createDate, DateTime expirationDate, string token, LoginDto user)
+    private object SuccessObject(DateTime createDate, DateTime expirationDate, string token, UserEntity user)
     {
         return new 
         {
-            authenticated = true,
+                authenticated = true,
                 created = createDate.ToString("yyyy-MM-dd HH:mm:ss"),
                 expiration = expirationDate.ToString("yyyy-MM-dd HH:mm:ss"),
                 acessToken = token,
                 userName = user.Email,
-                //name = user.Name,
+                name = user.Name,
                 message = "user logged in successfully"
         };
     }

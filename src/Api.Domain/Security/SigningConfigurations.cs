@@ -14,7 +14,7 @@ namespace Api.Domain.Security
             {
                 key = new RsaSecurityKey(provider.ExportParameters(true)); 
             }
-            SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.RsaSsaPssSha256Signature);
+            SigningCredentials = new SigningCredentials(key, SecurityAlgorithms.RsaSha256Signature);
         }
     }
 }

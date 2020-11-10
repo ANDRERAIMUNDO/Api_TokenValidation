@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a9P1peqK1Vl8ao836KQYH37VW/I7KQivek3YJjZM5ztOdUGYt9QQOHRxpMty9DlxiGpwKFoZ0wtzec06DmRMMw==",
+  "dgSpecHash": "M1NHF4j/f+cuK66ffPdGdeTH+wIiRR6vmDVLOnhay2ZIkFCsImn/hXdpysV1QZJEgKCYsIg8rIVnKRIZlvhMLQ==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service/Service.csproj",
   "expectedPackageFiles": [

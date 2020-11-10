@@ -14,7 +14,7 @@ namespace Api.Service.Services
     public class UserService : IUserService
     {
         private IRepository<UserEntity> _repository;
-        private IMapper _mapper;
+        private readonly IMapper _mapper;
         public UserService (IRepository<UserEntity> repository, IMapper mapper)
         {
             _repository = repository;

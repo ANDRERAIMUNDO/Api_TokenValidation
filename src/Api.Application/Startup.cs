@@ -31,6 +31,7 @@ namespace Application
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -60,6 +61,7 @@ namespace Application
             new ConfigureFromConfigurationOptions<TokenConfigurations>(
                 Configuration.GetSection("TokenConfigurations"))
                 .Configure(tokenConfigurations);
+            services.AddSingleton(tokenConfigurations);    
                 
                 services.AddAuthentication(authOptions =>
                 {
@@ -72,7 +74,6 @@ namespace Application
                 paramsValidation.IssuerSigningKey = signigConfigurations.key;
                 paramsValidation.ValidAudience = tokenConfigurations.Audience;
                 paramsValidation.ValidIssuer = tokenConfigurations.Issuer;
-                
                 paramsValidation.ValidateIssuerSigningKey = true;
                 paramsValidation.ValidateLifetime = true;
                 paramsValidation.ClockSkew = TimeSpan.Zero;
@@ -84,23 +85,26 @@ namespace Application
                     .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
                     .RequireAuthenticatedUser().Build());
                 });
-           services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-           services.AddControllers();
+          // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+          // services.AddControllers();
            services.AddSwaggerGen(c =>
            {    
                c.SwaggerDoc ("v1", new OpenApiInfo
                {
                 Version = "v1",
-                Title = "Api AspNetCore3.1",
+                Title = "API ASP NetCore 3.1",
                 Description = "Arquitera DDD",
+                TermsOfService = new Uri("http" + "://www.linkedin.com/in/andreraimundoo/"), 
                 Contact = new OpenApiContact
                {
                     Name = "Andre Raimundo",
-                    Email = "9000andre@gmail.com"
+                    Email = "9000andre@gmail.com",
+                    Url = new Uri ("http://www.linkedin.com/in/andreraimundoo/")
                },
                 License = new OpenApiLicense
                {
-                    Name = "Termos de uso"
+                    Name = "Termos de uso",
+                    Url = new Uri ("http://www.linkedin.com/in/andreraimundoo/")
                }
             });
            c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -117,7 +121,7 @@ namespace Application
                {
                    Reference = new OpenApiReference
                    {
-                       Id = "Beare",
+                       Id = "Bearer",
                        Type = ReferenceType.SecurityScheme
                    }
                }, new List<string>()
@@ -136,7 +140,7 @@ namespace Application
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("swagger/v1/swagger.json", "Api AspNetCore3.1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API ASP NetCore 3.1");
                 c.RoutePrefix = string.Empty;
             });
             app.UseRouting();

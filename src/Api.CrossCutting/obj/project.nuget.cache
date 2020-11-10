@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Z+8Tgouox41bId0R7Me60YNHigYqKM/LAu1ZL8nOLws1RqSX575/Qv+V1BVpY6cJ8JvfOmtipUCIGZk9/aObQ==",
+  "dgSpecHash": "bMHB3eonnJ4Y68OK+4GkNLNI/bavrVhFu1KOkT4pKE3Nt8lG1WVGFLrQpTjoxxa7s8aieCD1M4HOewhXcSCQCw==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.CrossCutting/CrossCutting.csproj",
   "expectedPackageFiles": [
