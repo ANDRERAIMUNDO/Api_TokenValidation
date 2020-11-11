@@ -59,7 +59,7 @@ namespace Api.Data.Repository
         {
             try
             {
-              return await _dataset.AnyAsync(p => p.Equals(id));
+              return await _dataset.AnyAsync(p => p.Id.Equals(id));
             }
 
             catch(Exception ex)
