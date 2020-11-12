@@ -25,6 +25,9 @@
                 "DB_CONNECTION": "Server=localhost;Port=3306;Database=dbapi;Uid=root;Pwd=123456",
                 "DATABASE": "MYSQL",
                 "MIGRATION": "APLICAR",
+                "Audience": "ExemploAudience",
+                "Issuer": "EmxemploIssuer",
+                "Seconds": "3600"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
