@@ -3,7 +3,7 @@ using System;
 using System.Net.Mime;
 using System.Threading.Tasks;
 using Api.Domain.Dto.User;
-namespace Api.Domain.Interfaces.User
+namespace Api.Domain.Interfaces.Services.User
 {
     public interface IUserService
     {

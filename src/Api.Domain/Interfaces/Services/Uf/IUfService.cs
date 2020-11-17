@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using System;
 using Api.Domain.Dto.Uf;
 using System.Collections.Generic;
-namespace Api.Service.Services.Uf
+namespace Api.Domain.Interfaces.Services.Uf
 {
     public interface IUfService
     {

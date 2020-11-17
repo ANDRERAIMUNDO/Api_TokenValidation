@@ -29,7 +29,7 @@ namespace Api.Data.Test
                     Email = Faker.Internet.Email(),
                     Name = Faker.Name.FullName()
                 };
-                var _registroCriado = await _repositorio.IsertAsync(_entity);
+                var _registroCriado = await _repositorio.InsertAsync(_entity);
 
                 Assert.NotNull(_registroCriado);
                 Assert.Equal(_entity.Email, _registroCriado.Email);

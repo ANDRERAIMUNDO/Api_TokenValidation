@@ -5,6 +5,6 @@ namespace Api.Domain.Repository
 {
     public interface ICepRepository : IRepository<CepEntity>
     {
-         Task<CepEntity> SelectAync (string cep);
+          Task<CepEntity> SelectAsync(string cep);
     }
-}
+}   

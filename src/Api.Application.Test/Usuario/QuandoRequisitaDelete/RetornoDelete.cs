@@ -1,7 +1,7 @@
 using System;
 using Api.Application.Controllers;
 using Api.Domain.Dto.User;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using Xunit;

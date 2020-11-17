@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7OjEVTVVuV2lXA3T/DOONT0MfTwKMaIcURuRgrbYDezhTjvtKANqLlv4VgDN8FcHyjQTP9tQXP+EPNDb6S1WHQ==",
+  "dgSpecHash": "jcK9PXS4jgrlr6hToCxZO1SpcPIMIGVWmD6ZCOGsMSlWTdYMswngrXx8aDXf430vpNN6L9+/6yQECLH9a63iSQ==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Data.Test/Api.Data.Test.csproj",
   "expectedPackageFiles": [

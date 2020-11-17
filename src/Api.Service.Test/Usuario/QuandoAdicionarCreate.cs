@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Xunit;
 using Moq;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 
 namespace Api.Service.Test.Usuario
 {

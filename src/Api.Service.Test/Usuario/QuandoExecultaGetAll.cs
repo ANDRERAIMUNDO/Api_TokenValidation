@@ -1,5 +1,5 @@
 using Api.Domain.Dto.User;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 using Moq;
 using System.Collections.Generic;
 using System.Linq;

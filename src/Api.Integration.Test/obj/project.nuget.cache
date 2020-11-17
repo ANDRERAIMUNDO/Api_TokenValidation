@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6TStSs2ZwFSBqcaTAPXbsJ2GGze06UtEmg9AXvrsOQqnTbeQr/2ICGs6roj7OWAaa9FrSTxOPUQ6QbhJXcS4Ww==",
+  "dgSpecHash": "qbo2xhDkduSPatCkDr4e7gz7FS3p9zCkfyiZpPos1JWaw/yTSRuSBcJFxpYH+34IhEBuXVefknhUUNj3E/aVyg==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Integration.Test/Api.Integration.Test.csproj",
   "expectedPackageFiles": [

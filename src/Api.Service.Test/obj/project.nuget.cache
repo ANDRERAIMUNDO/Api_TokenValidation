@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0XdolUBEkkqv+GzwyL6TcIp57idMOb7IHTTvPcEZH+27mBMRSoXtkVkB+C6Cc8VWzo3uN4+tDliRPNsoohpXcA==",
+  "dgSpecHash": "ca976/UdNcOs5JgAgPV3Psmoym3AMW7BWZuLm4+oquObNamm4Vh3qdTMLQuSxlKR/QL8g1HTkULVx8kd1KYgmQ==",
   "success": true,
   "projectFilePath": "/home/andre/Documentos/ApiAspNetCore/src/Api.Service.Test/Api.Service.Test.csproj",
   "expectedPackageFiles": [

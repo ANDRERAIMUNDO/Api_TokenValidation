@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 using Api.Domain.Dto.User;
 using Api.Domain.Models;
 using AutoMapper;
@@ -38,7 +38,7 @@ namespace Api.Service.Services
         {
             var model = _mapper.Map<UserModel>(user);
             var entity = _mapper.Map<UserEntity>(model);
-            var result = await _repository.IsertAsync(entity);
+            var result = await _repository.InsertAsync(entity);
 
             return _mapper.Map<UseDtoCreateResult>(result);
         }

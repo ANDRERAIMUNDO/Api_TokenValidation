@@ -8,16 +8,18 @@ namespace Api.Data.Implementations
 {
     public class CepImplementation : BaseRepository <CepEntity>, ICepRepository
     {
-        private DbSet <CepEntity> _dateSet;
-        public CepImplementation (MyContext context) : base (context)
+         private DbSet<CepEntity> _dataset;
+
+        public CepImplementation(MyContext context) : base(context)
         {
-            _dateSet = context.Set<CepEntity>();
+            _dataset = context.Set<CepEntity>();
         }
-        public async Task <CepEntity> SelectAync (string cep)
+
+        public async Task<CepEntity> SelectAsync(string cep)
         {
-            return await _dateSet.Include(c=>c.Municipio)
-            .ThenInclude(m=>m.Uf)
-            .FirstOrDefaultAsync(u=>u.Cep.Equals(cep));
+            return await _dataset.Include(c => c.Municipio)
+                                 .ThenInclude(m => m.Uf)
+                                 .SingleOrDefaultAsync(u => u.Cep.Equals(cep));
         }
     }
 }

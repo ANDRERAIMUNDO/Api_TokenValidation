@@ -4,7 +4,11 @@ namespace Api.Domain.Models
     public class BaseModel
     {
         private Guid _id;
-        public Guid Id;
+        public Guid Id
+        {
+            get {return _id;}
+            set {_id = value;}
+        }
         private DateTime _createAt;
         public DateTime CreateAt
         {

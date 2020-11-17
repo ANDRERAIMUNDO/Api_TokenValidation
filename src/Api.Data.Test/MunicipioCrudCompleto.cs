@@ -28,7 +28,7 @@ namespace Api.Data.Test
                     CodIBGE = Faker.RandomNumber.Next(1000000, 9999999),
                     UfId = new System.Guid("e7e416de-477c-4fa3-a541-b5af5f35ccf6")
                 };
-                var _resgistroCriado = await _repositorio.IsertAsync(_entity);
+                var _resgistroCriado = await _repositorio.InsertAsync(_entity);
 
                 Assert.NotNull(_resgistroCriado);
                 Assert.Equal(_entity.Nome, _resgistroCriado.Nome);

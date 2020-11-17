@@ -1,6 +1,6 @@
 using System.Runtime.CompilerServices;
 using Api.Domain.Dto.User;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 using Moq;
 using System;
 using System.Threading.Tasks;

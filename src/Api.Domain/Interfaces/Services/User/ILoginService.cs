@@ -3,7 +3,7 @@ using System;
 using System.Threading.Tasks;
 using Api.Domain.Dto;
 
-namespace Api.Domain.Interfaces.User
+namespace Api.Domain.Interfaces.Services.User
 {   
     public interface ILoginService
     {

@@ -3,7 +3,7 @@ using Moq;
 using System;
 using System.Threading.Tasks;
 using Xunit;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 
 namespace Api.Service.Test.Login
 {

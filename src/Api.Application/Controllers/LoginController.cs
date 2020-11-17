@@ -3,7 +3,7 @@ using System;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
-    using Api.Domain.Interfaces.User;
+    using Api.Domain.Interfaces.Services.User;
     using Api.Domain.Dto;
     using Microsoft.AspNetCore.Authorization;
     using System.Net;

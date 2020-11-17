@@ -1,5 +1,5 @@
 using Api.Service.Services;
-using Api.Domain.Interfaces.User;
+using Api.Domain.Interfaces.Services.User;
 using Microsoft.Extensions.DependencyInjection;
 namespace Api.CrossCutting.DependecyInjection
 {
