@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Api.Domain.Dto.Municipio;
 using Api.Domain.Dto.Uf;
 namespace Api.Service.Test.Municipio
