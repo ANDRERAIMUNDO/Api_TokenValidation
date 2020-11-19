@@ -147,3 +147,4 @@
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application.Test/obj/Debug/netcoreapp3.1/Api.Application.Test.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application.Test/obj/Debug/netcoreapp3.1/Api.Application.Test.pdb
 /home/andre/Documentos/ApiAspNetCore/src/Api.Application.Test/obj/Debug/netcoreapp3.1/Api.Application.Test.genruntimeconfig.cache
+/home/andre/Documentos/ApiAspNetCore/src/Api.Application.Test/bin/Debug/netcoreapp3.1/xunit.runner.json

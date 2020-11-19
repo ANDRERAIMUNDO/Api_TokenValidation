@@ -145,3 +145,4 @@
 /home/andre/Documentos/ApiAspNetCore/src/Api.Data.Test/bin/Debug/netcoreapp3.1/Service.pdb
 /home/andre/Documentos/ApiAspNetCore/src/Api.Data.Test/bin/Debug/netcoreapp3.1/Faker.NETCore.dll
 /home/andre/Documentos/ApiAspNetCore/src/Api.Data.Test/bin/Debug/netcoreapp3.1/de-DE/Faker.NETCore.resources.dll
+/home/andre/Documentos/ApiAspNetCore/src/Api.Data.Test/bin/Debug/netcoreapp3.1/xunit.runner.json
