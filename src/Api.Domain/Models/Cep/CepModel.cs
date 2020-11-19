@@ -1,7 +1,7 @@
 using System;
 namespace Api.Domain.Models.Cep
 {
-    public class CepModel
+    public class CepModel : BaseModel
     {
         private string _cep;
         public string Cep

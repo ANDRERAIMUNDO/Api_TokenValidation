@@ -33,15 +33,15 @@ namespace Api.Service.Test.AutoMapper
                 };
 
                 listaEntity.Add(item);
-            }
-            var entity = Mapper.Map<UfEntity>(model);
+            }         
             
+            var entity = Mapper.Map<UfEntity>(model);
+
             Assert.Equal(entity.Id, model.Id);
             Assert.Equal(entity.Nome, model.Nome);
             Assert.Equal(entity.Sigla, model.Sigla);
             Assert.Equal(entity.CreateAt, model.CreateAt);
             Assert.Equal(entity.UpdateAt, model.UpdateAt);
-
             var useDto  = Mapper.Map<UfDto>(entity);
 
             Assert.Equal(useDto.Id, entity.Id);
