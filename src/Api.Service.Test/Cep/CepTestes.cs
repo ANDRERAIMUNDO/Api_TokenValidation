@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Api.Domain.Dto.Municipio; 
 using Api.Domain.Dto.Cep;
 using Api.Domain.Dto.Uf;
-namespace Api.Service.Test
+namespace Api.Service.Test.Cep
 {
     public class CepTestes
     {
