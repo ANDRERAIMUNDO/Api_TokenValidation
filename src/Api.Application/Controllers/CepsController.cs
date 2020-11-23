@@ -39,7 +39,8 @@ namespace Api.Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);  
             }
         }
-        [Authorize("Bearer")]
+        //[Authorize("Bearer")]
+        [AllowAnonymous]
         [HttpGet]
         [Route("byCep/{cep}")]
         public async Task <ActionResult> Get (string cep)
