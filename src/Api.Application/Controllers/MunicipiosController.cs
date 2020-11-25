@@ -61,7 +61,7 @@ namespace Api.Application.Controllers
         [Authorize("Bearer")]
         [HttpGet]
         [Route("Complete/{id}")]
-        public async Task <ActionResult>GetCompleteById(Guid idMunicipio)
+        public async Task <ActionResult>GetCompleteById(Guid id)
         {
             if (!ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace Api.Application.Controllers
             }
             try
             {
-                var result =  await _service.GetCompleteById(idMunicipio);
+                var result =  await _service.GetCompleteById(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -84,7 +84,7 @@ namespace Api.Application.Controllers
         }
         [Authorize("Bearer")]
         [HttpGet]
-        [Route("byIBGE{codigoIBGE}")]
+        [Route("byIBGE/{codigoIBGE}")]
         public async Task <ActionResult>GetCompleteByIBGE(int codigoIBGE)
         {
             if (!ModelState.IsValid)

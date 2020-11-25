@@ -11,7 +11,7 @@ namespace Api.Domain.Dto.Municipio
         [Range(0, int.MaxValue, ErrorMessage="Codigo do IBGE invalido")]
         public int CodIBGE {get;set;}
         
-        [Required(ErrorMessage="Coigo de UFé campo obrigatorio")]
+        [Required(ErrorMessage="Codigo de UF é campo obrigatorio")]
         public Guid UfId {get;set;}
     }
 }
