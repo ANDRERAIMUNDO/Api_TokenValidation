@@ -4,7 +4,6 @@ using Xunit;
 using System.Threading.Tasks;
 using Api.Domain.Interfaces.Services.Municipio;
 using Microsoft.AspNetCore.Mvc;
-using Api.Domain.Dto.Municipio;
 using Api.Application.Controllers;
 namespace Api.Application.Test.Municipio.QuandoRequisitarDelete
 {
