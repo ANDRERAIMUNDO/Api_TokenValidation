@@ -39,7 +39,6 @@ namespace Api.Application.Controllers
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);  
             }
         }
-        //[Authorize("Bearer")]
         [AllowAnonymous]
         [HttpGet]
         [Route("byCep/{cep}")]
@@ -91,31 +90,32 @@ namespace Api.Application.Controllers
         }
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task <ActionResult> Put ([FromBody] CepDtoUpdate dtoUpdate)
+        public async Task<ActionResult> Put([FromBody] CepDtoUpdate dtoUpdate)
         {
-           if (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
             try
             {
                 var result = await _service.Put(dtoUpdate);
-                if(result != null)
-                {
-                    return Ok(result);
-                }
-                else
+                if (result == null)
                 {
                     return BadRequest();
                 }
+
+                return Ok(result);
+
             }
             catch (ArgumentException e)
             {
-                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);  
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
             }
+
         }
         [Authorize("Bearer")]
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> Delete (Guid id)
         {
             if (!ModelState.IsValid)

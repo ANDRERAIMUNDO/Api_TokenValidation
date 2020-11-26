@@ -37,7 +37,7 @@ namespace Api.Data.Test
                 Assert.Equal(_entityMunicipio.UfId, _registroCriado.UfId);
                 Assert.False(_registroCriado.Id == Guid.Empty);
 
-                CepImplementation _repositorio = new CepImplementation(context);
+                CepImplementations _repositorio = new CepImplementations(context);
                 CepEntity _entityCep = new CepEntity
                 {
                     Cep = "13.481-001",

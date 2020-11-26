@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Api.Domain.Dto.Cep;
 namespace Api.Domain.Interfaces.Services.Cep
